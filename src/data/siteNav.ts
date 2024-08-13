@@ -9,7 +9,7 @@ export const siteNav = [
         subMenu: [
             {
                 title: "Berita",
-                href: "/berita",
+                href: "/news",
                 desc: 'Berita terkini seputar kenotariatan'
             },
             {

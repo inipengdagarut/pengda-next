@@ -53,31 +53,31 @@ const MenuItem: React.FC<NavMenu> = ({ title, href, subMenu }) => {
         )
     }
     return (
-        <>
-            <NavigationMenuItem className="w-full flex">
-                <NavigationMenuTrigger>{title}</NavigationMenuTrigger>
-                <NavigationMenuContent>
-                    <ul className="flex flex-col gap-3 p-4 md:w-[400px]">
-                        {
-                            subMenu.map((sub, i) => (
-                                <li>
-                                    <Link href={sub.href} legacyBehavior passHref key={i}>
-                                        <NavigationMenuLink asChild className={`${linkStyle}`}>
-                                            <div>
-                                                <div className="text-sm font-medium leading-none text-left capitalize">{sub.title}</div>
-                                                <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
-                                                    {sub.desc}
-                                                </p>
-                                            </div>
-                                        </NavigationMenuLink>
-                                    </Link>
-                                </li>
-                            ))
-                        }
-                    </ul>
-                </NavigationMenuContent>
-            </NavigationMenuItem>
-        </>
+
+        <NavigationMenuItem className="w-full flex">
+            <NavigationMenuTrigger>{title}</NavigationMenuTrigger>
+            <NavigationMenuContent>
+                <ul className="flex flex-col gap-3 p-4 md:w-[400px]">
+                    {
+                        subMenu.map((sub, i) => (
+                            <li key={i}>
+                                <Link href={sub.href} legacyBehavior passHref>
+                                    <NavigationMenuLink asChild className={`${linkStyle}`}>
+                                        <div>
+                                            <div className="text-sm font-medium leading-none text-left capitalize">{sub.title}</div>
+                                            <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
+                                                {sub.desc}
+                                            </p>
+                                        </div>
+                                    </NavigationMenuLink>
+                                </Link>
+                            </li>
+                        ))
+                    }
+                </ul>
+            </NavigationMenuContent>
+        </NavigationMenuItem>
+
     )
 }
 MenuItem.displayName = "ListItem"
