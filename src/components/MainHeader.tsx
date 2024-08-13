@@ -8,7 +8,7 @@ import Link from "next/link";
 
 export default function MainHeader() {
     return (
-        <header className="MainHeader h-16 flex items-center border-b">
+        <header className="MainHeader h-16 flex items-center border-b fixed top-0 right-0 left-0 z-50 backdrop-blur-xl bg-background/85">
             <div className="container mx-auto flex items-center justify-between">
                 <div>
                     <Link href={'/'} className="block relative h-8 w-72">

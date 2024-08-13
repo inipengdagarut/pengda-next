@@ -45,7 +45,7 @@ const MenuItem: React.FC<NavMenu> = ({ title, href, subMenu }) => {
         return (
             <NavigationMenuItem>
                 <Link href={href} legacyBehavior passHref>
-                    <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+                    <NavigationMenuLink className={`${navigationMenuTriggerStyle()} bg-transparent`}>
                         {title}
                     </NavigationMenuLink>
                 </Link>
@@ -55,7 +55,7 @@ const MenuItem: React.FC<NavMenu> = ({ title, href, subMenu }) => {
     return (
 
         <NavigationMenuItem className="w-full flex">
-            <NavigationMenuTrigger>{title}</NavigationMenuTrigger>
+            <NavigationMenuTrigger className="bg-transparent">{title}</NavigationMenuTrigger>
             <NavigationMenuContent>
                 <ul className="flex flex-col gap-3 p-4 md:w-[400px]">
                     {
