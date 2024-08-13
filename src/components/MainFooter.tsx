@@ -80,8 +80,8 @@ export default function MainFooter() {
                     <div className="lg:w-2/6 mb-8">
                         <ul className="flex flex-wrap w-full">
                             {
-                                siteLink.map(nav => (
-                                    <NavLink href={nav.href} title={nav.title} />
+                                siteLink.map((nav,i) => (
+                                    <NavLink href={nav.href} title={nav.title} key={i}/>
                                 ))
                             }
                         </ul>
