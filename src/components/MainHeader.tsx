@@ -4,6 +4,7 @@ import { siteNav } from '@/data/siteNav';
 
 import SiteLogo from '../../public/logo-ini-text-1.svg';
 import Link from "next/link";
+import { OffCanvas } from "./OffCanvas";
 
 
 export default function MainHeader() {
@@ -12,11 +13,14 @@ export default function MainHeader() {
             <div className="container mx-auto flex items-center justify-between">
                 <div>
                     <Link href={'/'} className="block relative h-8 w-72">
-                        <Image src={SiteLogo} alt={'Logo Ikatan Notaris Indonesia'} fill />
+                        <Image src={SiteLogo} alt={'Logo Ikatan Notaris Indonesia'} fill/>
                     </Link>
                 </div>
-                <div>
+                <div className="hidden lg:block">
                     <SiteNav siteNav={siteNav} />
+                </div>
+                <div className="lg:hidden">
+                    <OffCanvas dataMenu={siteNav}/>
                 </div>
             </div>
         </header>

@@ -6,7 +6,7 @@ interface Props {
     siteNav: NavMenu[];
 }
 
-
+import Image from "next/image";
 import X from "@/components/icons/x";
 import Facebook from "@/components/icons/facebook";
 import Github from "@/components/icons/github";
@@ -59,8 +59,8 @@ export default function MainFooter() {
                 <div className="lg:flex justify-between gap-8">
                     <div className="lg:w-3/6 mb-8">
                         <div className="lg:flex gap-6">
-                            <div className="w-24 mb-4">
-                                <img src={LogoINI.src} alt="" />
+                            <div className="w-24 mb-4 relative">
+                                <Image src={LogoINI.src} alt="logo I.N.I" width={96} height={96} />
                             </div>
                             <div>
                                 <h2 className="mb-4 font-bold">

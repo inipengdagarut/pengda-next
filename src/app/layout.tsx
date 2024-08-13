@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 
-
+import { cn } from "@/lib/utils";
 import MainHeader from "@/components/MainHeader";
 import MainFooter from "@/components/MainFooter";
 
@@ -20,11 +20,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="id">
-      <body className={inter.className}>
+      <body className={cn(inter.className, 'antialiased')}>
         <div className="flex flex-col justify-between min-h-screen">
           <div>
             <MainHeader />
-            <main className="relative top-16">
+            <main className="relative mt-16">
               {children}
             </main>
           </div>
