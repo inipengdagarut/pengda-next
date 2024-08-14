@@ -9,3 +9,16 @@ export interface NavMenu {
     href: string
     subMenu?: Link[]
 }
+
+export interface Post {
+    author?: string;
+    collections: string;
+    draft: boolean;
+    excerpt: string;
+    id:string;
+    image?:string
+    postBody: string;
+    postDate: Date;
+    tags: string[]
+    title: string;
+}
