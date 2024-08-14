@@ -29,7 +29,7 @@ export default function Page() {
                     <div className="flex flex-col gap-4 mt-8">
                         <Label htmlFor="email">Pencarian Anggota</Label>
                         <div className="flex items-center gap-4 max-w-screen-sm">
-                            <Input />
+                            <Input placeholder="Cari berdasarkan nama, atau daerah"/>
                             <Button className="flex-none gap-2">
                                 <MagnifyingGlassIcon />  Pencarian
                             </Button>
