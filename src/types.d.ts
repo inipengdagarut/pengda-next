@@ -13,10 +13,10 @@ export interface NavMenu {
 export interface Post {
     author?: string;
     collections: string;
+    coverImage?:string
     draft: boolean;
     excerpt: string;
     id:string;
-    image?:string
     postBody: string;
     postDate: Date;
     tags: string[]
