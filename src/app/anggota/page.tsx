@@ -25,7 +25,7 @@ export default function Page() {
             </div>
             <div className="container mx-auto px-8 flex flex-col lg:flex-row gap-8 lg:justify-between lg:items-center">
                 <div className="lg:w-1/2">
-                    <p className="max-w-[60ch]">Terdapat 178 anggota kami di Kabupaten Garut. Anggota-anggota kami terdiri dari Notaris yang berdedikasi untuk melayani masyarakat. Kami siap membantu masyarakat dalam berbagai bidang terkait kenotariatan, seperti pembuatan akta, pengesahan dokumen, serta konsultasi hukum terkait.</p>
+                    <p className="prose">Terdapat 178 anggota kami di Kabupaten Garut. Anggota-anggota kami terdiri dari Notaris yang berdedikasi untuk melayani masyarakat. Kami siap membantu masyarakat dalam berbagai bidang terkait kenotariatan, seperti pembuatan akta, pengesahan dokumen, serta konsultasi hukum terkait.</p>
                     <div className="flex flex-col gap-4 mt-8">
                         <Label htmlFor="email">Pencarian Anggota</Label>
                         <div className="flex items-center gap-4 max-w-screen-sm">
