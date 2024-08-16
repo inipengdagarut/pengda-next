@@ -37,6 +37,7 @@ export default async function Page() {
                                         title={post.title}
                                         excerpt={post.excerpt}
                                         slug={`/news/${post.slug}`}
+                                        coverImage='https://picsum.photos/640/480'
                                     />
                                 </li>
                             ))
